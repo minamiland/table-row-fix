@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="utf-8" />
+    <title>TABLE FIX</title>
+
+    <meta name="keywords" content="table, th, fix, row" />
+    <meta name="description" content="js를 사용하지 않고 테이블의 th영역을 고정시키기" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+</head>
+<body>
+<div class="is-basefare">
+    <div class="scroll">
+        <table>
+            <caption>
+                <strong>Base pair and the various rules</strong>
+                <p class="summary">Base Fare and the choice of each section shows the variation of the corresponding Rule</p>
+            </caption>
+            <colgroup span="6"></colgroup>
+            <thead class="table_thead">
+                <tr>
+                    <th class="sample_01">
+                        SAMPLE <span class="tip"><i class="fa fa-question-circle fa-lg"></i></span>
+                        <strong class="tooltip">SAMPLE TEXTSAMPLE TEXTSAMPLE SAMPLE TEXTSAMPLE TEXTSAMPLE SAMPLE TEXTSAMPLE TEXTSAMPLE SAMPLE TEXTSAMPLE TEXTSAMPLE SAMPLE TEXTSAMPLE TEXTSAMPLE TEXT</strong>
+                    </th>
+                    <th class="sample_02">
+                        SAMPLE <span class="tip"><i class="fa fa-question-circle fa-lg"></i></span>
+                        <strong class="tooltip">SAMPLE TEXTSAMPLE TEXTSAMPLE SAMPLE TEXTSAMPLE TEXTSAMPLE SAMPLE TEXTSAMPLE TEXTSAMPLE SAMPLE TEXTSAMPLE TEXTSAMPLE SAMPLE TEXTSAMPLE TEXTSAMPLE SAMPLE TEXTSAMPLE TEXTSAMPLE SAMPLE TEXTSAMPLE TEXTSAMPLE SAMPLE TEXTSAMPLE TEXTSAMPLE SAMPLE TEXTSAMPLE TEXTSAMPLE TEXT</strong>
+                    </th>
+                    <th class="sample_03">
+                        SAMPLE <span class="tip"><i class="fa fa-question-circle fa-lg"></i></span>
+                        <strong class="tooltip">SAMPLE TEXTSAMPLE TEXTSAMPLE TEXT</strong>
+                    </th>
+                    <th class="sample_04">
+                        SAMPLE <span class="tip"><i class="fa fa-question-circle fa-lg"></i></span>
+                        <strong class="tooltip">SAMPLE TEXTSAMPLE TEXTSAMPLE TEXT</strong>
+                    </th>
+                    <th class="sample_05">
+                        SAMPLE <span class="tip"><i class="fa fa-question-circle fa-lg"></i></span>
+                        <strong class="tooltip">SAMPLE TEXTSAMPLE TEXTSAMPLE TEXT</strong>
+                    </th>
+                    <th class="sample_06">SAMPLE</th>
+                </tr>
+                <tr>
+                    <td>SAMPLE</td>
+                    <td>SAMPLE</td>
+                    <td>SAMPLE</td>
+                    <td>SAMPLE</td>
+                    <td>SAMPLE</td>
+                    <td><a class="ajax" href="sample.html" title="Rules Detail">
+                    <i class="fa fa-file-text-o fa-2x"></i> sample</a></td>
+                </tr>
+            </thead>
+            <tbody class="table_tbody">
+                <tr>
+                    <td class="sample_01"></td>
+                    <td class="sample_02"></td>
+                    <td class="sample_03"></td>
+                    <td class="sample_04"></td>
+                    <td class="sample_05"></td>
+                    <td class="sample_06 custom_td"></td>
+                </tr>
+                <tr>
+                    <td>SAMPLE</td>
+                    <td>SAMPLE</td>
+                    <td>SAMPLE</td>
+                    <td>SAMPLE</td>
+                    <td>SAMPLE</td>
+                    <td><a class="ajax" href="sample.html" title="Rules Detail">
+                    <i class="fa fa-file-text-o fa-2x"></i> sample</a></td>
+                </tr>
+                <tr>
+                    <td>SAMPLE</td>
+                    <td>SAMPLE</td>
+                    <td>SAMPLE</td>
+                    <td>SAMPLE</td>
+                    <td>SAMPLE</td>
+                    <td><a class="ajax" href="sample.html" title="Rules Detail">
+                    <i class="fa fa-file-text-o fa-2x"></i> sample</a></td>
+                </tr>
+                <tr>
+                    <td>SAMPLE</td>
+                    <td>SAMPLE</td>
+                    <td>SAMPLE</td>
+                    <td>SAMPLE</td>
+                    <td>SAMPLE</td>
+                    <td><a class="ajax" href="sample.html" title="Rules Detail">
+                    <i class="fa fa-file-text-o fa-2x"></i> sample</a></td>
+                </tr>
+                <tr>
+                    <td>SAMPLE</td>
+                    <td>SAMPLE</td>
+                    <td>SAMPLE</td>
+                    <td>SAMPLE</td>
+                    <td>SAMPLE</td>
+                    <td><a class="ajax" href="sample.html" title="Rules Detail">
+                    <i class="fa fa-file-text-o fa-2x"></i> sample</a></td>
+                </tr>
+                <tr>
+                    <td>SAMPLE</td>
+                    <td>SAMPLE</td>
+                    <td>SAMPLE</td>
+                    <td>SAMPLE</td>
+                    <td>SAMPLE</td>
+                    <td><a class="ajax" href="sample.html" title="Rules Detail">
+                    <i class="fa fa-file-text-o fa-2x"></i> sample</a></td>
+                </tr>
+                <tr>
+                    <td>SAMPLE</td>
+                    <td>SAMPLE</td>
+                    <td>SAMPLE</td>
+                    <td>SAMPLE</td>
+                    <td>SAMPLE</td>
+                    <td><a class="ajax" href="sample.html" title="Rules Detail">
+                    <i class="fa fa-file-text-o fa-2x"></i> sample</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {        
+        $(".table_thead tr:nth-child(2)").css({
+            'background': '#FFFF99',
+            'border-bottom': '1px dotted #CCC'
+        });
+        $(".table_thead strong").css('display','none');
+        $(".table_tbody tr:even").css("background", "#EEE");
+        $(".table_thead span.tip").mouseover(function(){
+            $(this).addClass('on');
+            $(".tooltip").fadeIn();
+            $(".table_tbody .table_thead strong").css('display','none');
+        }).mouseout(function(){
+            $(this).removeClass('on');
+            $(".tooltip").fadeOut();
+        });
+    });
+    </script>
+</body>
+</html>
