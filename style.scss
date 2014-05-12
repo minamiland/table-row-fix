@@ -1,0 +1,125 @@
+table { 
+    border-collapse: collapse; 
+    border-spacing: 0; 
+    display: table; 
+    font-size: 12px;
+}
+
+.is-basefare {
+	background: #EEE;
+	width: 735px;
+	height: 260px;
+	overflow: hidden;
+	.scroll {
+		display: block;
+		height: 260px;
+		overflow: auto;
+	}
+	table {
+		background: #FFF;
+		box-shadow: 0px 5px 10px rgba(65, 65, 65, 0.5);
+		caption {
+			display: none;
+		}
+		thead {
+			position: absolute;
+			display: inline-block;
+			z-index: 1;
+			th {
+				background: #666;
+				color: #EEE;
+				font-weight: normal;
+				height: 20px;
+				span {
+					color: #999;
+					margin: 0 0 0 2px;
+					cursor: pointer;
+					display: inline-block;
+					position: relative;
+					&:hover {
+						color: #CCC;
+					}
+				}
+				.tooltip {
+					display: block;
+					border: 1px;
+					position: absolute;
+					margin-top: 5px;
+					width: 150px;
+					height: auto;
+					background: #FFF;
+					padding: 10px;
+					border-radius: 5px;
+					color: #666;
+					text-align: left;
+					font-weight: normal;
+					box-shadow: 0 5px 10px rgba(68, 68, 68, 0.5);
+					z-index: 1000;
+				}
+			}
+		}
+		tbody {
+			position: relative;
+			.table_thead {
+				td {
+					height: 20px;
+				}	
+			}
+			td {
+				height: 20px;
+			}
+		}
+		tr {
+			th, td {
+				text-align: center;
+				vertical-align: middle;
+				padding: 10px;
+				margin: 0;
+				&.sample_01,
+				&.sample_05 {
+					width: 100px;
+				}
+				&.sample_02 {
+					width: 100px;
+				}
+				&.sample_03,
+				&.sample_06 {
+					width: 100px;
+				}
+				&.sample_04 {
+					width: 100px;
+				}
+			}
+			th {
+			}
+			&:hover {
+				td {
+					background: #99cc66;
+					cursor: pointer;
+					color: #FFF;
+					a {
+						color: #FFF;
+					}
+				}
+			}
+		}
+	}
+	.table_clone {
+		position: relative;
+	}
+	.table_thead {
+		display: block;
+		position: absolute;
+	}
+	.table_tbody {
+		.custom_td {
+			height:65px;
+		}
+	}
+	.file {
+		width: 12px;
+		height: 15px;
+		display: block;
+		margin: 0 auto;
+	}
+}
