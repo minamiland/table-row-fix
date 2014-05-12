@@ -1,0 +1,25 @@
+table { border-collapse: collapse; border-spacing: 0; display: table; font-size: 12px; }
+
+.is-basefare { background: #EEE; width: 735px; height: 260px; overflow: hidden; }
+.is-basefare .scroll { display: block; height: 260px; overflow: auto; }
+.is-basefare table { background: #FFF; box-shadow: 0px 5px 10px rgba(65, 65, 65, 0.5); }
+.is-basefare table caption { display: none; }
+.is-basefare table thead { position: absolute; display: inline-block; z-index: 1; }
+.is-basefare table thead th { background: #666; color: #EEE; font-weight: normal; height: 20px; }
+.is-basefare table thead th span { color: #999; margin: 0 0 0 2px; cursor: pointer; display: inline-block; position: relative; }
+.is-basefare table thead th span:hover { color: #CCC; }
+.is-basefare table thead th .tooltip { display: block; border: 1px; position: absolute; margin-top: 5px; width: 150px; height: auto; background: #FFF; padding: 10px; border-radius: 5px; color: #666; text-align: left; font-weight: normal; box-shadow: 0 5px 10px rgba(68, 68, 68, 0.5); z-index: 1000; }
+.is-basefare table tbody { position: relative; }
+.is-basefare table tbody .table_thead td { height: 20px; }
+.is-basefare table tbody td { height: 20px; }
+.is-basefare table tr th, .is-basefare table tr td { text-align: center; vertical-align: middle; padding: 10px; margin: 0; }
+.is-basefare table tr th.sample_01, .is-basefare table tr th.sample_05, .is-basefare table tr td.sample_01, .is-basefare table tr td.sample_05 { width: 100px; }
+.is-basefare table tr th.sample_02, .is-basefare table tr td.sample_02 { width: 100px; }
+.is-basefare table tr th.sample_03, .is-basefare table tr th.sample_06, .is-basefare table tr td.sample_03, .is-basefare table tr td.sample_06 { width: 100px; }
+.is-basefare table tr th.sample_04, .is-basefare table tr td.sample_04 { width: 100px; }
+.is-basefare table tr:hover td { background: #99cc66; cursor: pointer; color: #FFF; }
+.is-basefare table tr:hover td a { color: #FFF; }
+.is-basefare .table_clone { position: relative; }
+.is-basefare .table_thead { display: block; position: absolute; }
+.is-basefare .table_tbody .custom_td { height: 65px; }
+.is-basefare .file { width: 12px; height: 15px; display: block; margin: 0 auto; }
